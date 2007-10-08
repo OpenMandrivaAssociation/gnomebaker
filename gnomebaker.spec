@@ -1,13 +1,13 @@
 %define name	gnomebaker
-%define version 0.6.1
-%define release %mkrel 4
+%define version 0.6.2
+%define release %mkrel 1
 
 Name: 	 	%{name}
 Summary: 	Simple CD burning frontend for GNOME
 Version: 	%{version}
 Release: 	%{release}
 
-Source:		http://prdownloads.sourceforge.net/gnomebaker/%{name}-%{version}.tar.bz2
+Source:		http://prdownloads.sourceforge.net/gnomebaker/%{name}-%{version}.tar.gz
 URL:		http://biddell.co.uk/gnomebaker.php
 License:	GPL
 Group:		Archiving/Cd burning
@@ -49,9 +49,6 @@ In the future it will also do the following and hopefully much more:
 %setup -q
 chmod 644 AUTHORS ChangeLog NEWS TODO README
 #./autogen.sh
-fgrep -Irl cdrecord . | xargs perl -pi -e "s/cdrecord/wodim/g"
-fgrep -Irl mkisofs . | xargs perl -pi -e "s/mkisofs/genisoimage/g"
-fgrep -Irl cdda2wav . | xargs perl -pi -e "s/cdda2wav/icedax/g"
 
 %build
 export CFLAGS="%optflags -rdynamic"
