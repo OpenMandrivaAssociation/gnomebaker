@@ -61,10 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 rm -fr $RPM_BUILD_ROOT/%_prefix/doc
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="GnomeBaker" longtitle="CD burning" section="System/Archiving/CD Burning" xdg="true"
-EOF
 desktop-file-install --vendor="" \
   --remove-category="Application" \
   --add-category="X-MandrivaLinux-System-Archiving-CDBurning" \
@@ -101,7 +97,6 @@ rm -rf $RPM_BUILD_ROOT
 %_datadir/icons/hicolor/*/apps/*
 %dir %{_datadir}/omf/%name
 %{_datadir}/omf/%name/*-C.omf
-%{_menudir}/%name
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
