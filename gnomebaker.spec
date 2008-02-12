@@ -14,7 +14,7 @@ Group:		Archiving/Cd burning
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ImageMagick libgnomeui2-devel libglade2.0-devel bison
 BuildRequires:	scrollkeeper
-BuildRequires:	libgstreamer0.10-devel
+BuildRequires:	gstreamer0.10-devel
 BuildRequires:  libnotify-devel
 BuildRequires:	perl-XML-Parser
 BuildRequires:	desktop-file-utils
