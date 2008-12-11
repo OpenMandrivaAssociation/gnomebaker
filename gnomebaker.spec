@@ -12,7 +12,7 @@ URL:		http://biddell.co.uk/gnomebaker.php
 License:	GPL
 Group:		Archiving/Cd burning
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	ImageMagick libgnomeui2-devel libglade2.0-devel bison
+BuildRequires:	imagemagick libgnomeui2-devel libglade2.0-devel bison
 BuildRequires:	scrollkeeper
 BuildRequires:	gstreamer0.10-devel
 BuildRequires:  libnotify-devel
