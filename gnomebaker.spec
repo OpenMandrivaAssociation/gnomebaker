@@ -1,6 +1,6 @@
 %define name	gnomebaker
 %define version 0.6.4
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name: 	 	%{name}
 Summary: 	Simple CD burning frontend for GNOME
