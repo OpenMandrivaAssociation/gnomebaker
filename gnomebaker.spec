@@ -1,6 +1,6 @@
 %define name	gnomebaker
 %define version 0.6.4
-%define release %mkrel 4
+%define release %mkrel 5
 
 Name: 	 	%{name}
 Summary: 	Simple CD burning frontend for GNOME
@@ -9,6 +9,7 @@ Release: 	%{release}
 
 Source:		http://prdownloads.sourceforge.net/gnomebaker/%{name}-%{version}.tar.gz
 Patch0:		gnomebaker-0.6.4-mdv-fix-str-fmt.patch
+Patch1:		gnomebaker-0.6.4-libnotify-0.7.patch
 URL:		http://biddell.co.uk/gnomebaker.php
 License:	GPL
 Group:		Archiving/Cd burning
@@ -49,6 +50,7 @@ In the future it will also do the following and hopefully much more:
 %prep
 %setup -q
 %patch0 -p1 -b .strfmt
+%patch1 -p0 -b .libnotify
 chmod 644 AUTHORS ChangeLog NEWS TODO README
 #./autogen.sh
 
