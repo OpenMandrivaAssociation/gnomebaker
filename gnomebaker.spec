@@ -4,8 +4,8 @@
 
 Name: 	 	%{name}
 Summary: 	Simple CD burning frontend for GNOME
-Version: 	%{version}
-Release: 	%{release}
+Version: 	0.6.4
+Release: 	1%{release}
 
 Source:		http://prdownloads.sourceforge.net/gnomebaker/%{name}-%{version}.tar.gz
 Patch0:		gnomebaker-0.6.4-mdv-fix-str-fmt.patch
