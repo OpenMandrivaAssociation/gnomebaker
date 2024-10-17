@@ -10,7 +10,7 @@ Release: 	1%{release}
 Source:		http://prdownloads.sourceforge.net/gnomebaker/%{name}-%{version}.tar.gz
 Patch0:		gnomebaker-0.6.4-mdv-fix-str-fmt.patch
 Patch1:		gnomebaker-0.6.4-libnotify-0.7.patch
-URL:		http://biddell.co.uk/gnomebaker.php
+URL:		https://biddell.co.uk/gnomebaker.php
 License:	GPL
 Group:		Archiving/Cd burning
 BuildRoot:	%{_tmppath}/%{name}-buildroot
